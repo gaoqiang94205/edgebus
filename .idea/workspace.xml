@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b01bf57f-39a5-4241-9f64-cb3505393f72" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" path="D:/wjk/go" />
+  <component name="GoLibraries">
+    <option name="urls">
+      <list>
+        <option value="file://$PROJECT_DIR$/../.." />
+      </list>
+    </option>
+    <option name="useGoPathFromSystemEnvironment" value="false" />
+  </component>
+  <component name="ProjectId" id="1kAcchRf0dbYlkMuw3DEMHCw6sL" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="configurable.Global.GOPATH.is.expanded" value="true" />
+    <property name="configurable.Module.GOPATH.is.expanded" value="false" />
+    <property name="configurable.Project.GOPATH.is.expanded" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/client/cmd/client.exe" />
+    <property name="settings.editor.selected.configurable" value="com.goide.configuration.GoLibrariesConfigurableProvider" />
+    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/client/cmd/client.exe" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\gaoqiang\go\src\edgebus\client\pkg" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Go Build.go build client.go">
+    <configuration name="go build agent.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="edgebus" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/client/pkg/agent.go" />
+      <package value="edgebus" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build client.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
+      <module name="edgebus" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/client/cmd/client.go" />
+      <package value="edgebus" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build server.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="edgebus" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/server/cmd/server.go" />
+      <package value="edgebus" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestURLClient_HTTPDo in edgebus/client/pkg/util" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="edgebus" />
+      <working_directory value="$PROJECT_DIR$/client/pkg/util" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="edgebus/client/pkg/util" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestURLClient_HTTPDo\E$" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Go Build.go build agent.go" />
+      <item itemvalue="Go Build.go build client.go" />
+      <item itemvalue="Go Build.go build server.go" />
+      <item itemvalue="Go Test.TestURLClient_HTTPDo in edgebus/client/pkg/util" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build client.go" />
+        <item itemvalue="Go Build.go build server.go" />
+        <item itemvalue="Go Build.go build agent.go" />
+        <item itemvalue="Go Test.TestURLClient_HTTPDo in edgebus/client/pkg/util" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="653" y="324" key="#Go_Modules" timestamp="1605147339123">
+      <screen x="0" y="0" width="1600" height="856" />
+    </state>
+    <state x="653" y="324" key="#Go_Modules/0.0.1600.856@0.0.1600.856" timestamp="1605147339123" />
+    <state x="270" y="70" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605183572769">
+      <screen x="0" y="0" width="1600" height="856" />
+    </state>
+    <state x="270" y="70" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1600.856@0.0.1600.856" timestamp="1605183572769" />
+    <state x="524" y="218" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605184007712">
+      <screen x="0" y="0" width="1600" height="856" />
+    </state>
+    <state x="524" y="218" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1600.856@0.0.1600.856" timestamp="1605184007712" />
+    <state x="658" y="212" key="#com.intellij.ide.util.MemberChooser" timestamp="1605174354903">
+      <screen x="0" y="0" width="1600" height="856" />
+    </state>
+    <state x="658" y="212" key="#com.intellij.ide.util.MemberChooser/0.0.1600.856@0.0.1600.856" timestamp="1605174354903" />
+    <state x="256" y="154" width="1109" height="513" key="DiffContextDialog" timestamp="1605184083615">
+      <screen x="0" y="0" width="1600" height="856" />
+    </state>
+    <state x="256" y="154" width="1109" height="513" key="DiffContextDialog/0.0.1600.856@0.0.1600.856" timestamp="1605184083615" />
+    <state x="594" y="170" key="FileChooserDialogImpl" timestamp="1605184012978">
+      <screen x="0" y="0" width="1600" height="856" />
+    </state>
+    <state x="594" y="170" key="FileChooserDialogImpl/0.0.1600.856@0.0.1600.856" timestamp="1605184012978" />
+    <state width="1259" height="167" key="GridCell.Tab.0.bottom" timestamp="1605183563037">
+      <screen x="0" y="0" width="1600" height="856" />
+    </state>
+    <state width="1259" height="167" key="GridCell.Tab.0.bottom/0.0.1600.856@0.0.1600.856" timestamp="1605183563037" />
+    <state width="1259" height="167" key="GridCell.Tab.0.center" timestamp="1605183563037">
+      <screen x="0" y="0" width="1600" height="856" />
+    </state>
+    <state width="1259" height="167" key="GridCell.Tab.0.center/0.0.1600.856@0.0.1600.856" timestamp="1605183563037" />
+    <state width="1259" height="167" key="GridCell.Tab.0.left" timestamp="1605183563037">
+      <screen x="0" y="0" width="1600" height="856" />
+    </state>
+    <state width="1259" height="167" key="GridCell.Tab.0.left/0.0.1600.856@0.0.1600.856" timestamp="1605183563037" />
+    <state width="1259" height="167" key="GridCell.Tab.0.right" timestamp="1605183563037">
+      <screen x="0" y="0" width="1600" height="856" />
+    </state>
+    <state width="1259" height="167" key="GridCell.Tab.0.right/0.0.1600.856@0.0.1600.856" timestamp="1605183563037" />
+    <state width="1259" height="210" key="GridCell.Tab.1.bottom" timestamp="1605182341192">
+      <screen x="0" y="0" width="1600" height="856" />
+    </state>
+    <state width="1259" height="210" key="GridCell.Tab.1.bottom/0.0.1600.856@0.0.1600.856" timestamp="1605182341192" />
+    <state width="1259" height="210" key="GridCell.Tab.1.center" timestamp="1605182341192">
+      <screen x="0" y="0" width="1600" height="856" />
+    </state>
+    <state width="1259" height="210" key="GridCell.Tab.1.center/0.0.1600.856@0.0.1600.856" timestamp="1605182341192" />
+    <state width="1259" height="210" key="GridCell.Tab.1.left" timestamp="1605182341192">
+      <screen x="0" y="0" width="1600" height="856" />
+    </state>
+    <state width="1259" height="210" key="GridCell.Tab.1.left/0.0.1600.856@0.0.1600.856" timestamp="1605182341192" />
+    <state width="1259" height="210" key="GridCell.Tab.1.right" timestamp="1605182341192">
+      <screen x="0" y="0" width="1600" height="856" />
+    </state>
+    <state width="1259" height="210" key="GridCell.Tab.1.right/0.0.1600.856@0.0.1600.856" timestamp="1605182341192" />
+    <state x="353" y="47" key="SettingsEditor" timestamp="1605169449375">
+      <screen x="0" y="0" width="1600" height="856" />
+    </state>
+    <state x="353" y="47" key="SettingsEditor/0.0.1600.856@0.0.1600.856" timestamp="1605169449375" />
+    <state width="654" height="356" key="XDebugger.FullValuePopup" timestamp="1605180900442">
+      <screen x="0" y="0" width="1600" height="856" />
+    </state>
+    <state width="654" height="356" key="XDebugger.FullValuePopup/0.0.1600.856@0.0.1600.856" timestamp="1605180900442" />
+    <state x="473" y="177" width="672" height="678" key="search.everywhere.popup" timestamp="1605231854743">
+      <screen x="0" y="0" width="1600" height="856" />
+    </state>
+    <state x="473" y="177" width="672" height="678" key="search.everywhere.popup/0.0.1600.856@0.0.1600.856" timestamp="1605231854743" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/client/pkg/agent.go</url>
+          <line>53</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
