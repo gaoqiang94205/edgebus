@@ -7,6 +7,7 @@ import (
 	"flag"
 	"fmt"
 	"github.com/gorilla/websocket"
+	"github.com/sirupsen/logrus"
 	"io/ioutil"
 	"log"
 	"net/http"
@@ -19,33 +20,34 @@ const (
 
 var addr = flag.String("addr", "localhost:8090", "http service address")
 
-func Agent() {
-	flag.Parse()
-	log.SetFlags(0)
+var Con *websocket.Conn
 
+func Agent() error {
 	//系统中断信号
 	//interrupt := make(chan os.Signal, 1)
 	//signal.Notify(interrupt, os.Interrupt)
 	//建立连接
 	u := url.URL{Scheme: "ws", Host: *addr, Path: "/ws"}
-	log.Printf("connecting to %s", u.String())
-	c, _, err := websocket.DefaultDialer.Dial(u.String(), nil)
-	if err != nil {
-		log.Fatal("dial:", err)
-	}
-	//defer c.Close()
+	logrus.Info("connecting to %s", u.String())
 
-	done := make(chan struct{})
-	receive(done, c)
+	var err error
+	Con, _, err = websocket.DefaultDialer.Dial(u.String(), nil)
+	if err != nil {
+		return err
+	}
+	//receive执行完毕之后关闭该连接,理论上会一直保持连接
+	defer Con.Close()
+
+	receive()
+	return nil
 }
 
 //循环处理来自peer对端来的请求，通过chan管道控制执行结束
-func receive(signal chan struct{}, c *websocket.Conn) {
+func receive() {
 	for {
-		_, message, err := c.ReadMessage()
+		_, message, err := Con.ReadMessage()
 		if err != nil {
 			log.Println("read:", err)
-			return
 		}
 		re := new(common.SideRequest)
 		if err := json.Unmarshal(message, re); err != nil {
@@ -63,7 +65,7 @@ func receive(signal chan struct{}, c *websocket.Conn) {
 		} else {
 			body = []byte("hello")
 		}
-		if err := c.WriteMessage(1, body); err != nil {
+		if err := Con.WriteMessage(1, body); err != nil {
 			fmt.Errorf("write message fail")
 		}
 	}

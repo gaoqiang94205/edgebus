@@ -1,5 +1,7 @@
 package common
 
+import "time"
+
 const (
 	//测试请求
 	Ping = iota
@@ -11,6 +13,7 @@ const (
 const (
 	Url    = "url"
 	Method = "method"
+	Edge   = "edge"
 )
 
 //请求结构
@@ -26,4 +29,10 @@ type SideRequest struct {
 type SideResponse struct {
 	content string
 	url     string
+}
+
+//心跳请求
+type HeartRequest struct {
+	client string
+	time   time.Time
 }

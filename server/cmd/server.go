@@ -1,20 +1,21 @@
 package main
 
 import (
-	"edgebus/server/pkg"
-	"flag"
-	"github.com/gorilla/websocket"
-	"log"
+	"edgebus/pkg/setting"
+	"edgebus/server/pkg/routes"
+	"edgebus/tools/log"
+	"github.com/sirupsen/logrus"
 	"net/http"
 )
 
-var addr = flag.String("addr", "localhost:8090", "http service address")
-
+func init() {
+	log.Setup()
+	setting.SetServer()
+}
 func main() {
-	flag.Parse()
-	log.SetFlags(0)
-	ld := pkg.NewLeader(make(map[string]*websocket.Conn))
-	http.HandleFunc("/ws", ld.Accept)
-	http.HandleFunc("/send",ld.Deliver)
-	log.Fatal(http.ListenAndServe(*addr, nil))
+	//初始化路由信息
+	routes.Init()
+
+	//启动web服务
+	logrus.Fatal(http.ListenAndServe(setting.ServerConf.Listen(), nil))
 }
