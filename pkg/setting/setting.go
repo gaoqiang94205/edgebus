@@ -18,13 +18,13 @@ type global struct {
 var GlobalSetting = &global{}
 
 type clientConf struct {
-	RemoteAddr string
-	Port       string
+	Type   string
+	Target string
 }
 
-func (c *clientConf) Call() string {
-	return strings.Join([]string{c.RemoteAddr, c.Port}, ":")
-}
+//func (c *clientConf) Call() string {
+//	return c.Target
+//}
 
 type serverConf struct {
 	ListenAddr string
@@ -41,8 +41,8 @@ var ServerConf = &serverConf{}
 var cfg *ini.File
 
 func SetClient() {
-	configFile := flag.String("c", "conf/ws-client.ini", "-c conf/client.ini")
-	setup(configFile, ClientConf)
+	ClientConf.Type = *flag.String("type", "client", "--type client/server")
+	ClientConf.Target = *flag.String("target", "127.0.0.1:8090", "127.0.0.1:8090")
 }
 
 func SetServer() {

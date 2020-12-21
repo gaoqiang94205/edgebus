@@ -1,11 +1,10 @@
 package main
 
 import (
+	"edgebus/common/http"
 	"edgebus/pkg/setting"
 	"edgebus/server/pkg/routes"
 	"edgebus/tools/log"
-	"github.com/sirupsen/logrus"
-	"net/http"
 )
 
 func init() {
@@ -14,8 +13,8 @@ func init() {
 }
 func main() {
 	//初始化路由信息
-	routes.Init()
-
+	router := http.InitRoutes()
+	routes.RegisterApiRouter(router)
 	//启动web服务
-	logrus.Fatal(http.ListenAndServe(setting.ServerConf.Listen(), nil))
+	router.Run(setting.ServerConf.Listen())
 }

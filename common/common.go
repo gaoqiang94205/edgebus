@@ -16,6 +16,7 @@ const (
 	Edge   = "edge"
 )
 
+//边缘端发送请求
 //请求结构
 type SideRequest struct {
 	Target string
@@ -36,3 +37,16 @@ type HeartRequest struct {
 	client string
 	time   time.Time
 }
+
+type UpgradeRequest struct {
+	Name string `json:"name" binding:"required"`
+}
+
+//向边缘端注入云端信息
+type CloudInfoRequest struct {
+	Addr string
+	Path string
+}
+
+//服务端发送请求
+//
